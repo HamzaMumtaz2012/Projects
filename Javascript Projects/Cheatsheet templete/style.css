@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+font-family: sans-serif;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8em;
+  height: 100px;
+background: #272822;
+ color: white;
+}
+nav img{
+  height: 90px;
+  color: whitesmoke;
+
+  margin-right: 30px;
+}
+.container{
+  font-size: 1.7em;
+
+   width: 50vw;
+  margin: auto;
+  padding: 62px 0;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100;
+
+
+}
+.container li{
+  margin-left: 40px;
+  margin-top: 40px;
+
+}
+.content{
+   font-family: "Potta One", system-ui;
+   font-size: 1.3em;
+}
+pre,
+code {
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 16px;
+  line-height: 1.4;
+}
+div.code-toolbar>.toolbar>.toolbar-item>span {
+  font-weight: 700;
+}
+div.code-toolbar>.toolbar>.toolbar-item>button {
+  color: #bbb;
+  font-size: .8em;
+  padding: 4px 21px;
+  background: rgba(224, 224, 224, .2);
+  box-shadow: 0 2px 0 0 rgb(0 0 0 / 20%);
+  border-radius: 16px;
+  border: 1px solid white;
+  transition: all 0.4s ease;
+}
+
+div.code-toolbar>.toolbar>.toolbar-item>button:hover{
+  background: #f5f2f0;
+  transition: all 0.4s ease;
+}
+
+
+pre[class*=language-] {
+border-radius: 20px;
+}

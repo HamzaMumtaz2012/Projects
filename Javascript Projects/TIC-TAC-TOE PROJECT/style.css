@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  text-align: center;
+  background-color: #548678;
+}
+.container {
+  height: 70vh;
+  color: white;
+}
+.game {
+  height: 50vmin;
+  display: grid;
+  grid-template-rows: 18vmin 18vmin 18vmin;
+  grid-template-columns: 20vmin 20vmin 20vmin;
+  column-gap: 0rem;
+  row-gap: 0.4rem;
+  margin-left: 330px;
+  margin-top: 40px;
+}
+.btn {
+  height: 18vmin;
+  width: 18vmin;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f0f0; /* light gray */
+  background-color: #1e1e1e;
+  font-size: 2.7em;
+  transition: all 0.1s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.04);
+  transition: all 0.1s ease-in-out;
+  background-color: #333333;
+}
+
+.buttonn {
+  background: linear-gradient(45deg, #4caf50, #009688);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: all 0.3s ease-in-out;
+}
+.buttonn:hover {
+  transform: translateY(-13px);
+  transition: all 0.3s ease-in-out;
+}

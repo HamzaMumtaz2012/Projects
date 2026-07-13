@@ -1,0 +1,274 @@
+body {
+  background: #f8f5f0;
+  color: #333;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #ff6f61;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.5em;
+overflow: hidden;
+}
+nav h2{
+  color: #6b591c;
+  position: relative;
+    display: inline-block;
+    right: 750px;
+      text-shadow: -3px 2px 4px white; 
+}
+
+
+nav h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 40%;
+  height: 5px;
+  background: #ff6f61;
+  border-radius: 10px;
+}
+nav li {
+  list-style: none;
+  margin: 0 40px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.cart{
+  position:relative;
+left: 900px;
+cursor: pointer;
+}
+
+nav li a:hover {
+  opacity: 0.7;
+}
+
+header {
+  background: url('https://images.unsplash.com/photo-1606755962773-d324e0a13045?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4.9em;
+  color: white;
+  text-shadow: 0 5px 10px black;
+  font-family: monospace;
+border-right: 3px solid black;
+width: 11ch;
+overflow: hidden;
+white-space: nowrap;
+animation: Hamza 4s steps(11) infinite , blink 0.5s step-end infinite;
+box-sizing: border-box;
+}
+@keyframes Hamza{
+  0%{
+    width: 0;
+  }
+  25%{
+    width: 11ch;
+  }
+  50%{
+    width: 11ch;
+  }
+  75%{
+    width: 11ch;
+  }
+  100%{
+    width: 0;
+  }
+}
+@keyframes blink{
+50%{
+  border-right: transparent;
+}  
+}
+header p {
+  font-size: 1.8em;
+  margin-top: 10px;
+  color: white;
+  text-shadow: 1px 3px 6px black;
+}
+
+header button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+header button:hover {
+  background: #e55a4e;
+}
+
+section {
+  padding: 70px 20px;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+section h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5em;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 70px;
+  justify-items: center;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 200%;
+  max-width: 300px;
+  transition: all 0.3s ease;
+}
+.card:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.card img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 64px;
+  height: 64px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.card p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.card button {
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: 700;
+  background: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #e55a4e;
+}
+
+/* Responsive adjustments */
+
+.sides{
+  margin-top: 120px;
+  gap: 40px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.leftSide  img {
+  text-align: left;
+  border-radius: 25px;
+transition: all 0.3s ease;
+}
+.leftSide img:hover{
+  transform: scale(1.020);
+  transition: all 0.3s ease;
+}
+.leftSide{
+  
+position: relative;
+right: 310px;
+}
+.rightSide p{
+  font-size: 1.7em;
+text-align: right;
+width: 1000px;
+font-weight: 530;
+position: relative;
+right: 250px;
+
+}
+.aboutSection{
+  margin-top: 300px;
+  font-family: sans-serif;
+  
+}
+#Contact p{
+  font-size: 1.7em;
+  text-align: center;
+}
+footer{
+  background: #ff6f61;
+  height: 100px;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 1.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+@media (max-width: 768px) {
+  section {
+    padding: 40px 15px;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  header p {
+    font-size: 1.2em;
+  }
+
+  .sides {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rightSide p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .leftSide img {
+    width: 100%;
+    height: auto;
+  }
+}

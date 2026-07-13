@@ -1,0 +1,27 @@
+{
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "javascriptreact": "javascriptreact",
+    "typescript": "typescriptreact",
+    "typescriptreact": "typescriptreact"
+  },
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "javascriptreact": "javascript",
+    "typescript": "javascript",
+    "typescriptreact": "javascript"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.experimental.classRegex": [
+    "className\\s*=\\s*\"([^\"]*)\"",
+    "className\\s*=\\s*'([^']*)'"
+  ],
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  }
+}

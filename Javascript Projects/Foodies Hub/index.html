@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodies Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link type="image/png" sizes="120x120" rel="icon" href="https://img.icons8.com/color/48/kawaii-french-fries.png" alt="kawaii-french-frie">
+</head>
+<body>
+  <nav>
+    <h2>Foodies Hub</h2>
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#Menu">Menu</a></li>
+    <li><a href="#About">About</a></li>
+    <li><a href="#Contact">Contact</a></li>
+    
+<li class="cart">
+  <img width="48" height="48" src="https://img.icons8.com/fluency/48/shopping-cart.png" alt="shopping-cart" />
+</li>
+   
+  </nav>
+ 
+
+  <header id="Home">
+      <h1>Foodies Hub</h1>
+      <p>Delicious food delivered fast & fresh</p>
+      <button onclick="document.getElementById('Menu').scrollIntoView()">Explore Menu</button>
+  </header>
+
+  <section id="Menu">
+    <h1 style="font-weight: 800;">OUR MENU</h1>
+    <div class="menu " >
+
+
+
+
+      <div class="samosa card">
+        <img width="64" height="64" src="https://img.icons8.com/dusk/64/samosa.png" alt="samosa" />
+        <h2>SAMOSA</h2>
+        <p>Authentic, spicy, and fragant.</p> <br>
+<button class="btn add-to-cart" data-name="SAMOSA" data-price="50" onclick="alert('Your Samosa is ordered')">Order Now</button>
+
+      </div>
+
+      <div class="burger card">
+              <img width="64" height="64" src="https://img.icons8.com/dusk/64/hamburger.png" alt="burger" />
+              <h2>BURGER</h2>
+              <p>Juisy, cheesy burgers made with love and fresh ingredients.</p>
+              <button class="btn add-to-cart" data-name="BURGER" data-price="50" onclick="alert('Your Burger is ordered')">Order Now</button>
+
+</div>
+
+<div class="pizza card">
+      <img style="text-align: center;" width="64" height="64" src="https://img.icons8.com/dusk/64/salami-pizza.png" alt="pizza" />
+      <h2>PIZZA</h2>
+      <p>Hot, cheesy, and loaded with toppings for pizza lovers.</p>
+    <button onclick="alert('Your Pizza is ordered')"class="btn add-to-cart" data-name="PIZZA" data-price="50">Order Now</button>
+
+</div>
+
+<div class="chicken-nugget card">
+      <img width="64" height="64" src="https://img.icons8.com/dusk/64/chicken-nugget.png" alt="chicken-nugget" />
+      <h2>CHICKEN NUGGET</h2>
+      <p>Crispy, spicy wings perfect for snacks or party time. </p>
+      <button onclick="alert('Your Chicken Nugget is ordered')" class="btn add-to-cart" data-name="CHICKEN NUGGET" data-price="50">Order Now</button>
+
+</div>
+<div class="chocolate-cake card">
+  <img src="https://img.icons8.com/dusk/64/double-chocolate-cake.png" alt="double-chocolate-cake" />
+  <h2>Chocolate Cake</h2>
+  <p>Rich and moist chocolate cake for dessert lovers.</p>
+  <button onclick="alert('Your Chocolate cake is ordered')" class="btn add-to-cart" data-name="CHOCOLATE CAKE" data-price="50">Order Now</button>
+
+</div>
+
+  </section>
+
+  <section id="About" class="aboutSection">
+    <h1 style="font-weight: 810;">ABOUT US</h1>
+    <div class="sides">
+    <div class="leftSide">
+      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=80" alt="">
+    </div>
+    <div class="rightSide">
+<p>
+Foodies Hub is your go-to place for mouth-watering dishes made with the freshest ingredients. We believe in delivering not just food but happiness on every plate. Our chefs have years of experience preparing authentic recipes from aroundthe world.From traditional biryani to cheesy pizzas, we have something for everyone. Order now and experience the magic of taste!</p>
+    </div>
+    </div>
+  </section>
+
+  <section id="Contact" style="margin-top: 200px;">
+    <h1 style="font-weight: 800;">CONTACT US</h1>
+    <br>
+    
+    <p>Email: foodieshub@gmail.com</p>
+    <p>Phone: 03001234567</p>
+  </section>
+  
+  <footer>
+    <p>&copy:2025 Foodies hub-made by Hamza </p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
